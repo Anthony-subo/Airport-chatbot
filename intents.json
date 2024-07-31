@@ -1,0 +1,395 @@
+{
+  "intents": [
+    {
+      "tag": "language_choice",
+      "patterns": [
+        "I want to chat in English",
+        "Nataka kuzungumza kwa Kiswahili",
+        "Choose English",
+        "Chagua Kiswahili"
+      ],
+      "responses": [
+        "You have chosen to chat in English.",
+        "Umechagua kuzungumza kwa Kiswahili."
+      ],
+      "context": ["set_language"]
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there",
+        "How are you",
+        "Is anyone there?",
+        "Hey",
+        "Hola",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hello, how can I assist you today?",
+        "Good to see you again! How can I help?",
+        "Hi there! What can I do for you?"
+      ],
+      "context": ["english"]
+    },
+    {
+      "tag": "greeting_swahili",
+      "patterns": [
+        "Habari",
+        "Hamjambo",
+        "Sasa",
+        "Hujambo"
+      ],
+      "responses": [
+        "Habari! Ninaweza kusaidia vipi?",
+        "Nzuri sana. Ninaweza kusaidia vipi?",
+        "Hujambo! Niaje kukusaidia?"
+      ],
+      "context": ["swahili"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Nice chatting to you, bye",
+        "Till next time"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "See you next time!",
+        "Bye! Feel free to return if you need more help."
+      ],
+      "context": ["english"]
+    },
+    {
+      "tag": "goodbye_swahili",
+      "patterns": [
+        "Kwaheri",
+        "Tutaonana baadaye",
+        "Kwa heri",
+        "Ilikuwa vizuri kuzungumza na wewe, kwaheri",
+        "Mpaka wakati mwingine"
+      ],
+      "responses": [
+        "Kwaheri! Uwe na siku njema!",
+        "Tutaonana tena!",
+        "Kwaheri! Njoo tena ikiwa unahitaji msaada zaidi."
+      ],
+      "context": ["swahili"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+      ],
+      "responses": [
+        "You're welcome! I'm glad I could help.",
+        "My pleasure! If you have more questions, just ask.",
+        "You're welcome! Let me know if you need anything else."
+      ],
+      "context": ["english"]
+    },
+    {
+      "tag": "thanks_swahili",
+      "patterns": [
+        "Asante",
+        "Asante sana",
+        "Hiyo ni msaada",
+        "Nzuri, asante",
+        "Asante kwa kunisaidia"
+      ],
+      "responses": [
+        "Karibu! Nimefurahi kuwa nisaidia.",
+        "Ni furaha yangu! Ikiwa una maswali mengine, uliza tu.",
+        "Karibu! Niambie kama unahitaji kitu kingine."
+      ],
+      "context": ["swahili"]
+    },
+    {
+      "tag": "flight_status",
+      "patterns": [
+        "What's the status of flight KQ102?",
+        "Is flight KQ102 on time?",
+        "Has flight KQ102 arrived?",
+        "When will flight AA123 depart?",
+        "What is the status of flight BA456?",
+        "Is flight CA789 delayed?",
+        "When is flight DL101 arriving?",
+        "What time is flight EK202 departing?",
+        "Has flight JL303 landed yet?"
+      ],
+      "responses": [
+        "Flight KQ102 is currently on time.",
+        "Flight KQ102 has just landed.",
+        "Flight KQ102 is delayed by 30 minutes.",
+        "Flight AA123 is scheduled to depart at 14:00.",
+        "Flight BA456 is expected to arrive at 18:00.",
+        "Flight CA789 is on time.",
+        "Flight DL101 will arrive at 20:00.",
+        "Flight EK202 is departing at 15:30.",
+        "Flight JL303 has landed at 17:45."
+      ],
+      "context": ["english"]
+    },
+    {
+      "tag": "flight_status_swahili",
+      "patterns": [
+        "Ndege KQ102 ina hali gani?",
+        "Ndege KQ102 imewasili?",
+        "Ndege KQ102 itawasili saa ngapi?",
+        "Ndege AA123 inatoka saa ngapi?",
+        "Ndege BA456 inatarajiwa kuwasili saa ngapi?",
+        "Ndege CA789 iko kwa wakati?",
+        "Ndege DL101 itawasili saa ngapi?",
+        "Ndege EK202 itatoka saa ngapi?",
+        "Ndege JL303 imetua?"
+      ],
+      "responses": [
+        "Ndege KQ102 iko kwa wakati.",
+        "Ndege KQ102 imetua.",
+        "Ndege KQ102 imechelewa kwa dakika 30.",
+        "Ndege AA123 inatarajiwa kuondoka saa 14:00.",
+        "Ndege BA456 inatarajiwa kuwasili saa 18:00.",
+        "Ndege CA789 iko kwa wakati.",
+        "Ndege DL101 itawasili saa 20:00.",
+        "Ndege EK202 itatoka saa 15:30.",
+        "Ndege JL303 imetua saa 17:45."
+      ],
+      "context": ["swahili"]
+    },
+    {
+      "tag": "directions",
+      "patterns": [
+        "How do I get to terminal 1A?",
+        "Can you guide me to the arrivals?",
+        "Where is the departures area?",
+        "How do I get to gate 5?",
+        "Where can I find the check-in counter?",
+        "Can you direct me to the baggage claim?",
+        "Where is the nearest exit?",
+        "How do I get to terminal 2 from here?",
+        "Where is the lost and found office?"
+      ],
+      "responses": [
+        "To get to terminal 1A, follow the signs or ask any airport staff for assistance.",
+        "The arrivals section is straight ahead. Just follow the signs.",
+        "The departures area is located on the second floor.",
+        "Gate 5 is to your right. Follow the signs for gates.",
+        "The check-in counter is near the main entrance.",
+        "Baggage claim is located on the ground floor, past the arrivals area.",
+        "The nearest exit is near gate 8.",
+        "To get to terminal 2, follow the signs for terminal transfer.",
+        "The lost and found office is near the main entrance."
+      ],
+      "context": ["english"]
+    },
+    {
+      "tag": "directions_swahili",
+      "patterns": [
+        "Ni wapi naweza pata terminal 1A?",
+        "Ninawezaje kufika kwa arrivals?",
+        "Sehemu ya departures iko wapi?",
+        "Ninawezaje kufika kwa lango 5?",
+        "Ni wapi counter ya kujiandikisha?",
+        "Ninawezaje kufika kwa sehemu ya kudai mizigo?",
+        "Mlango wa kutoka uko wapi?",
+        "Ninawezaje kufika kwa terminal 2 kutoka hapa?",
+        "Ofisi ya kupotea na kupatikana iko wapi?"
+      ],
+      "responses": [
+        "Ili kufika terminal 1A, fuata ishara au uliza mfanyakazi yeyote wa uwanja wa ndege.",
+        "Sehemu ya kuwasili iko mbele. Fuata tu ishara.",
+        "Sehemu ya departures iko katika ghorofa ya pili.",
+        "Lango 5 liko upande wako wa kulia. Fuata ishara za lango.",
+        "Counter ya kujiandikisha iko karibu na mlango mkuu.",
+        "Sehemu ya kudai mizigo iko katika ghorofa ya chini, baada ya sehemu ya kuwasili.",
+        "Mlango wa kutoka uko karibu na lango 8.",
+        "Ili kufika kwa terminal 2, fuata ishara za uhamisho wa terminal.",
+        "Ofisi ya kupotea na kupatikana iko karibu na mlango mkuu."
+      ],
+      "context": ["swahili"]
+    },
+    {
+      "tag": "facilities",
+      "patterns": [
+        "Where are the restrooms?",
+        "Do you have Wi-Fi?",
+        "Is there a lounge here?",
+        "Where can I find the ATM?",
+        "Is there a pharmacy in the airport?",
+        "Where can I get food and drinks?",
+        "Are there showers available?",
+        "Where can I charge my phone?",
+        "Is there a lost and found office?"
+      ],
+      "responses": [
+        "Restrooms are located near gate 12.",
+        "Yes, we offer free Wi-Fi throughout the airport.",
+        "There is a lounge in terminal 1A.",
+        "The ATM is located near the main entrance.",
+        "Yes, there is a pharmacy in terminal 1B.",
+        "Food and drinks are available in the food court in terminal 2.",
+        "Showers are available in the lounge area.",
+        "Phone charging stations are located throughout the terminals.",
+        "The lost and found office is located near the main entrance."
+      ],
+      "context": ["english"]
+    },
+    {
+      "tag": "facilities_swahili",
+      "patterns": [
+        "Ni wapi choo kiko?",
+        "Mnayo Wi-Fi?",
+        "Kuna lounge hapa?",
+        "Ni wapi naweza kupata ATM?",
+        "Kuna pharmacy katika uwanja wa ndege?",
+        "Ninaweza kupata chakula na vinywaji wapi?",
+        "Kuna showers hapa?",
+        "Ninaweza kuchaji simu yangu wapi?",
+        "Ofisi ya kupotea na kupatikana iko wapi?"
+      ],
+      "responses": [
+        "Choo kiko karibu na lango 12.",
+        "Ndiyo, tunatoa Wi-Fi bila malipo kote uwanja wa ndege.",
+        "Kuna lounge katika terminal 1A.",
+        "ATM iko karibu na mlango mkuu.",
+        "Ndiyo, kuna pharmacy katika terminal 1B.",
+        "Chakula na vinywaji vinapatikana katika food court katika terminal 2.",
+        "Showers zinapatikana katika eneo la lounge.",
+        "Vituo vya kuchaji simu viko katika sehemu zote za terminal.",
+        "Ofisi ya kupotea na kupatikana iko karibu na mlango mkuu."
+      ],
+      "context": ["swahili"]
+    },
+    {
+      "tag": "transport",
+      "patterns": [
+        "How can I get a taxi?",
+        "Is there an Uber pick-up point?",
+        "Where can I find public transport?",
+        "Are there shuttle services available?",
+        "Where is the car rental office?",
+        "How do I get to the parking lot?",
+        "Are there buses to the city center?",
+        "Where can I find a bike rental station?",
+        "Is there a train station nearby?"
+      ],
+      "responses": [
+        "You can get a taxi outside the arrivals section.",
+        "The Uber pick-up point is near terminal 1B.",
+        "Public transport options are available outside the terminal.",
+        "Yes, there are shuttle services to nearby hotels.",
+        "The car rental office is located near the arrivals section.",
+        "To get to the parking lot, follow the signs for 'Parking'.",
+        "Yes, there are buses to the city center from the bus station outside.",
+        "There is a bike rental station near the main entrance.",
+        "Yes, there is a train station connected to the airport."
+      ],
+      "context": ["english"]
+    },
+    {
+      "tag": "transport_swahili",
+      "patterns": [
+        "Ni wapi napata teksi?",
+        "Kuna mahali napata Uber?",
+        "Ninaweza kupata usafiri wa umma wapi?",
+        "Kuna huduma za shuttle hapa?",
+        "Ofisi ya kukodisha magari iko wapi?",
+        "Ninawezaje kufika kwa parking lot?",
+        "Kuna mabasi yanayokwenda mjini?",
+        "Ninaweza kupata kituo cha kukodisha baiskeli wapi?",
+        "Kuna kituo cha treni kilicho karibu?"
+      ],
+      "responses": [
+        "Unaweza kupata teksi nje ya sehemu ya kuwasili.",
+        "Sehemu ya kuchukua Uber iko karibu na terminal 1B.",
+        "Chaguzi za usafiri wa umma zinapatikana nje ya terminal.",
+        "Ndiyo, kuna huduma za shuttle kwa hoteli zilizo karibu.",
+        "Ofisi ya kukodisha magari iko karibu na sehemu ya kuwasili.",
+        "Ili kufika kwa parking lot, fuata ishara za 'Parking'.",
+        "Ndiyo, kuna mabasi yanayokwenda mjini kutoka kituo cha basi kilicho nje.",
+        "Kuna kituo cha kukodisha baiskeli karibu na mlango mkuu.",
+        "Ndiyo, kuna kituo cha treni kilichounganishwa na uwanja wa ndege."
+      ],
+      "context": ["swahili"]
+    },
+    {
+      "tag": "customs",
+      "patterns": [
+        "What can I bring into the country?",
+        "Are there any customs restrictions?",
+        "How much duty-free allowance do I have?",
+        "What items are prohibited?",
+        "Do I need to declare any items?",
+        "Where is the customs office?",
+        "Can I bring food or plants into the country?",
+        "What are the rules for bringing in alcohol?",
+        "Are there any restrictions on electronics?"
+      ],
+      "responses": [
+        "You can bring personal items for personal use. There are restrictions on certain items.",
+        "Yes, there are customs restrictions on certain items such as fruits and plants.",
+        "The duty-free allowance depends on the country you are entering. Check the local regulations.",
+        "Prohibited items include drugs, weapons, and certain agricultural products.",
+        "Yes, you may need to declare items that exceed your duty-free allowance.",
+        "The customs office is located near the arrivals area.",
+        "Generally, food and plants may require declaration and inspection.",
+        "Alcohol is subject to duty-free allowances. Check local regulations for limits.",
+        "Certain electronics may be restricted or require declaration."
+      ],
+      "context": ["english"]
+    },
+    {
+      "tag": "customs_swahili",
+      "patterns": [
+        "Ninaweza kuleta nini nchini?",
+        "Kuna vikwazo vya forodha?",
+        "Nina kiwango gani cha duty-free?",
+        "Ni vitu gani haviruhusiwi?",
+        "Nahitaji kutangaza vitu vyovyote?",
+        "Ofisi ya forodha iko wapi?",
+        "Ninaweza kuleta chakula au mimea nchini?",
+        "Sheria za kuleta pombe ni zipi?",
+        "Kuna vikwazo vipi kwa vifaa vya umeme?"
+      ],
+      "responses": [
+        "Unaweza kuleta vitu vya kibinafsi kwa matumizi binafsi. Kuna vikwazo kwa vitu vingine.",
+        "Ndiyo, kuna vikwazo vya forodha kwa vitu vingine kama matunda na mimea.",
+        "Kiwango cha duty-free kinategemea nchi unayoingia. Angalia kanuni za ndani.",
+        "Vitu vilivyopigwa marufuku ni pamoja na madawa, silaha, na baadhi ya bidhaa za kilimo.",
+        "Ndiyo, unaweza kuhitaji kutangaza vitu vinavyozidi kiwango chako cha duty-free.",
+        "Ofisi ya forodha iko karibu na sehemu ya kuwasili.",
+        "Kwa ujumla, chakula na mimea zinaweza kuhitaji kutangazwa na kukaguliwa.",
+        "Pombe inahusishwa na viwango vya duty-free. Angalia kanuni za ndani kwa mipaka.",
+        "Vifaa vya umeme vingine vinaweza kuwa na vikwazo au kuhitaji kutangazwa."
+      ],
+      "context": ["swahili"]
+    },
+    {
+      "tag": "baggage_policy_swahili",
+      "patterns": [
+        "Ningezweza kubeba mizigo gani kwenye ndege KQ102?",
+        "Ni uzito gani unaruhusiwa kwa mizigo ya kubeba?",
+        "Ni kiasi gani cha mizigo naweza kupeleka kwenye ndege AA123?",
+        "Je, kuna vikwazo vya mizigo kwa ndege BA456?",
+        "Ni sera gani za mizigo kwa darasa la kiuchumi kwenye ndege CA789?",
+        "Uzito gani unaruhusiwa kwa mizigo ya kuangukia?"
+      ],
+      "responses": [
+        "Sera za mizigo hutofautiana kulingana na shirika la ndege na ndege. Kwa ndege KQ102, unaweza kubeba begi moja la kubeba lenye uzito wa hadi 7 kg na mizigo iliyokaguliwa hadi 23 kg. Tafadhali angalia na shirika lako la ndege kwa maelezo maalum.",
+        "Kwa ndege AA123, ruzuku ya kawaida ni begi moja la kubeba na begi moja la kuangukia, kila moja ikiwa na uzito wa hadi 23 kg. Angalia na shirika lako la ndege kwa ada au vikwazo vingine.",
+        "Ndege BA456 inaruhusu begi moja la kubeba lenye uzito wa hadi 7 kg na begi moja la kuangukia lenye uzito wa hadi 30 kg. Tafadhali thibitisha maelezo na shirika lako la ndege kwani sera zinaweza kubadilika.",
+        "Darasa la kiuchumi kwenye ndege CA789 kawaida linajumuisha begi moja la kubeba na begi moja la kuangukia, huku begi la kuangukia likiwa na uzito wa hadi 23 kg. Thibitisha na shirika lako la ndege kwa taarifa sahihi.",
+        "Ukomo wa uzito kwa mizigo inayokaguliwa kawaida ni 23 kg kwa kila begi. Kwa mizigo ya kubeba, ukomo wa uzito mara nyingi ni 7 kg. Daima angalia na shirika lako la ndege kwa sera za halisi."
+      ],
+      "context": ["swahili"]
+    }
+  ]
+}
+
